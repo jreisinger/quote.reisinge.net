@@ -26,6 +26,7 @@ Deploy
     . venv/bin/activate
     pip install -r requirements.txt
     deactivate
+    sudo cpanm CGI
     sudo wget https://raw.githubusercontent.com/jreisinger/dotfiles/master/bin/myquote
     sudo chmod u+x myquote
     sudo chown -R http: /opt/quote.reisinge.net
