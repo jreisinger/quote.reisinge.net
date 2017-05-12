@@ -20,6 +20,7 @@ Deploy
 
     sudo mkdir /opt/quote
     cd /opt/quote
+    sudo rm -rf *
     sudo git clone git@github.com:jreisinger/quote.reisinge.net.git
     sudo mv quote.reisinge.net/* .
     sudo rm -rf quote.reisinge.net
