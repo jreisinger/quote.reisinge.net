@@ -5,8 +5,8 @@ After=network.target
 [Service]
 Type=simple
 User=http
-WorkingDirectory=/opt/quote
-ExecStart=/usr/bin/uwsgi --ini quote.ini
+WorkingDirectory=/opt/quote.reisinge.net
+ExecStart=/opt/quote.reisinge.net/venv/bin/uwsgi --ini quote.ini
 
 [Install]
 WantedBy=multi-user.target
