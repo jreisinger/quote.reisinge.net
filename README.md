@@ -18,3 +18,9 @@ Run
 
     export FLASK_APP=quote.py
     flask run [--host=0.0.0.0]
+
+Install
+
+    mkdir /opt/quote
+    cd /opt/quote
+    wget https://github.com/jreisinger/dotfiles/blob/master/bin/myquote

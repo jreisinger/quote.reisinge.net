@@ -1,13 +1,13 @@
 from flask import Flask
 from subprocess import Popen, PIPE
-from os.path import expanduser, join
 
 app = Flask(__name__)
 
+myquote = '/opt/quote/myquote'
+
 @app.route('/')
 def quote():
-    home = expanduser("~")
-    cmd  = [ join(home, 'bin', 'myquote'), '-w' ]
+    cmd  = [ myquote, '-w' ]
     p = Popen(   cmd,
                  stdout = PIPE, 
                  stdin  = PIPE, 
