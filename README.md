@@ -20,6 +20,7 @@ Deploy
 
     cd /opt
     sudo git clone git@github.com:jreisinger/quote.reisinge.net.git
+    cd quote.reisinge.net
     . venv/bin/activate # if this doesn't work see above
     pip install -r requirements.txt
     deactivate
