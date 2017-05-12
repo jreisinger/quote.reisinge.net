@@ -1,0 +1,13 @@
+[Unit]
+Description=Start uwsgi instance for quote (flask app)
+After=network.target
+
+[Service]
+Type=simple
+User=http
+WorkingDirectory=/home/reisinge/github-repos/quote.reisinge.net
+Environment="PATH=/home/reisinge/github-repos/quote.reisinge.net/venv/bin"
+ExecStart=/home/reisinge/github-repos/quote.reisinge.net/venv/bin/uwsgi --ini quote.ini
+
+[Install]
+WantedBy=multi-user.target
