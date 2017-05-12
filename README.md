@@ -1,10 +1,8 @@
-Setup
+Develop
 
     # Do once
     sudo pip install virtualenv
     virtualenv venv # create your own environment
-
-Develop
 
     . venv/bin/activate
     pip install -r requirements.txt
@@ -14,13 +12,18 @@ Develop
     
     deactivate
 
-Run
-
+    # Run
     export FLASK_APP=quote.py
     flask run [--host=0.0.0.0]
 
-Install
+Deploy
 
-    mkdir /opt/quote
+    sudo mkdir /opt/quote
     cd /opt/quote
-    wget https://github.com/jreisinger/dotfiles/blob/master/bin/myquote
+    sudo wget https://raw.githubusercontent.com/jreisinger/dotfiles/master/bin/myquote
+    sudo git clone git@github.com:jreisinger/quote.reisinge.net.git
+    sudo mv quote.reisinge.net/* .
+    sudo rm -rf quote.reisinge.net
+    pip install -r requirements.txt
+    sudo chown -R http: /opt/quote
+    echo "copy config(s) from etc"
