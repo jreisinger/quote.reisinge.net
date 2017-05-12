@@ -3,7 +3,7 @@ from subprocess import Popen, PIPE
 
 app = Flask(__name__)
 
-myquote = '/opt/quote/myquote'
+myquote = '/opt/quote.reisinge.net/myquote'
 
 @app.route('/')
 def quote():
