@@ -14,7 +14,7 @@ def quote():
                  stderr = PIPE
               )
     out, err = p.communicate()
-    out = str(out)
-    (quote, url, link) = out.split('|');
+    out = str(out.decode('utf-8'))
+    (quote, url, link) = out.split('|')
     #return out
     return render_template('layout.html', quote=quote, url=url, link=link)
