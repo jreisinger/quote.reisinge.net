@@ -21,6 +21,7 @@ Deploy
     cd /opt
     sudo git clone git@github.com:jreisinger/quote.reisinge.net.git
     cd quote.reisinge.net
+    sudo pacman -S uwsgi-plugin-python
     sudo pip install -r requirements.txt
     sudo cpanm CGI
     sudo wget https://raw.githubusercontent.com/jreisinger/dotfiles/master/bin/myquote
