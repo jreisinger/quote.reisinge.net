@@ -20,7 +20,6 @@ Deploy
 
     cd /opt
     sudo git clone git@github.com:jreisinger/quote.reisinge.net.git
-    sudo chown -R http: /opt/quote.reisinge.net
     cd quote.reisinge.net
     sudo pip install -r requirements.txt
     sudo cpanm CGI
