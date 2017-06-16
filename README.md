@@ -20,7 +20,7 @@ Deploy
 
     cd /opt
     sudo git clone git@github.com:jreisinger/quote.reisinge.net.git
-    sudo chown -R $USER: /opt/quote.reisinge.net
+    sudo chown -R http: /opt/quote.reisinge.net
     cd quote.reisinge.net
     virtualenv venv # create your own environment
     . venv/bin/activate
