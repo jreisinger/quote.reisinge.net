@@ -23,7 +23,7 @@ Deploy
     cd quote.reisinge.net
     sudo pacman -S uwsgi-plugin-python
     sudo pip install -r requirements.txt
-    sudo cpanm CGI
+    sudo cpanm CGI Bytes::Random::Secure
     sudo wget https://raw.githubusercontent.com/jreisinger/dotfiles/master/bin/myquote
     sudo chmod u+x myquote
     sudo chown -R http: /opt/quote.reisinge.net
